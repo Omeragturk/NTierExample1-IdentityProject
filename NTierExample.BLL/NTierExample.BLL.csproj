@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NTierExample.DAL\NTierExample.DAL.csproj" />
+    <ProjectReference Include="..\NTierExample.DTO\NTierExample.DTO.csproj" />
+    <ProjectReference Include="..\NTierExample.Entities\NTierExample.Entities.csproj" />
+    <ProjectReference Include="..\NTierExample.Shared\NTierExample.Shared.csproj" />
+    <ProjectReference Include="..\NTierExample.ViewModel\NTierExample.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

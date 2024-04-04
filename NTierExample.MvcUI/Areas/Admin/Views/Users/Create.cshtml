@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+@model UserCreateVm
+
+<h1>Create</h1>
+
+<form asp-action="create" asp-area="admin" asp-controller="users" method="post">
+    <div class="form-control">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    <div class="form-control">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" />
+    </div>
+    <div class="form-control">
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" />
+    </div>
+    <div class="form-control">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+    <div class="form-control">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" />
+    </div>
+    <div class="form-control">
+      <button type="submit" class="btn btn-success">
+          Yeni Oluştur
+      </button>
+    </div>
+</form>

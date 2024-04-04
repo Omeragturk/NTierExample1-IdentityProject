@@ -1,0 +1,28 @@
+﻿@model LoginVm
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<div class="container">
+    <form asp-action="Login">
+        <div class="form-control">
+            <label asp-for="UserName" >Kullanıcı Adı</label>
+            <input asp-for="UserName" type="text" class="form-control" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+
+        <div class="form-control">
+            <label asp-for="Password">Parola</label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-control">
+            <button type="submit" class="btn btn-primary">
+                Login
+            </button>
+        </div>
+    </form>
+</div>
+

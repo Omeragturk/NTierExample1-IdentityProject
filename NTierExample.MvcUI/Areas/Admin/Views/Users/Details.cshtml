@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model UserDetailVm
+
+
+<section class="container-md">
+    <section class="rounded-1">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" disabled />
+    </section>
+    <section class="rounded-1">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" disabled />
+    </section>
+    <section class="rounded-1">
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" disabled />
+    </section>
+    <section class="rounded-1">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" disabled />
+    </section>
+    <br />
+    <h1>Roller</h1>
+    <ul class="list-group">
+        @{
+            foreach (var role in Model.RoleNames)
+            {
+
+                <li class="list-group-item">@role</li>
+            }
+        }
+    </ul>
+</section>
